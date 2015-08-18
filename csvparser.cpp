@@ -16,16 +16,6 @@ using namespace std;
 
 string popularityParse(string* arr, int len);
 
-/*int main(){
-	string arr[5];
-	arr[0] = "chess";
-	arr[1] = "cheer";
-	arr[2] = "cheek";
-	arr[3] = "cheese";
-	arr[4] = "geese";
-	cout << popularityParse(arr, 5) << endl;
-}*/
-
 string popularityParse(string* arr, int len){
 	string commandPartOne = "curl 'https://www.google.com/trends/trendsReport?hl=en-US&q=";
 	for(int a=0; a<len; a++){
